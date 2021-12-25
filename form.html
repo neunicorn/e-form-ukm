@@ -56,7 +56,7 @@
                 <p>Isilah dengan benar dan tepat!</p>
             </div>
 
-            <form class="row g-3" id="form2" action="backend/regis.php" method="POST">
+            <form class="row g-3" id="form2" action="backend/regis.php" method="post">
                 <div class="col-md-3">
                     <label for="fname" class="form-label">First name</label>
                     <input type="text" class="form-control" id="fname" name="firstName" required>
@@ -71,9 +71,9 @@
                     <label for="ukms" class="form-label">Pilihan UKM</label>
                     <select class="form-select" id="ukms"aria-label="Default select example" name="ukm" required>
                         <option selected disabled value="">Pilih...</option>
-                        <option name="ukm" value="FLAT">FLAT</option>
-                        <option name="ukm" value="FORSA">FORSA</option>
-                        <option name="ukm" value="HIQMA">HIQMA</option>
+                        <option value="FLAT">FLAT</option>
+                        <option value="FORSA">FORSA</option>
+                        <option value="HIQMA">HIQMA</option>
                     </select>
                 </div>
 
@@ -107,7 +107,7 @@
 
                 <div class="col-md-12">
                     <label for="alasan" class="form-label">Alasan Bergabung</label>
-                    <textarea class="form-control" id="alasan" rows="6" name="alassan"></textarea>
+                    <textarea class="form-control" id="alasan" rows="6" name="alasan"></textarea>
                 </div>
 
                 <div class="col-12">
