@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $conn = mysqli_connect('localhost:3308', 'root', '', 'formukm');
 if(!$conn){
     die('gagal connect' .$conn->connect_error());
@@ -19,9 +21,11 @@ $querry = mysqli_query($conn, "INSERT INTO dataregis(firstName, lastName, ukm, n
     VALUES ('$firstName', '$lastName', '$ukm', '$nim', '$email', '$fakultas', '$prodi', '$nohp', '$alasan')");
 
 if($querry){
-    header("location: ../index.html?message=berhasil");
+    $_SESSION['status'] = "Data berhasil di input!";
+    header("location: ../form.php");
 }else{
-    header("location: ../index.html?message=gagal");
+    $_SESSION['status'] = "Data gagal di input!";
+    header("location: ../form.php");
 }
 
 ?>
