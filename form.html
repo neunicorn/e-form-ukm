@@ -56,20 +56,20 @@
                 <p>Isilah dengan benar dan tepat!</p>
             </div>
 
-            <form class="row g-3" id="form2">
+            <form class="row g-3" id="form2" action="backend/regis.php" method="POST">
                 <div class="col-md-3">
                     <label for="fname" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="fname" required>
+                    <input type="text" class="form-control" id="fname" name="firstName" required>
                 </div>
 
                 <div class="col-md-3">
                     <label for="lname" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="lname" required>
+                    <input type="text" class="form-control" id="lname" name="lastName" required>
                 </div>
 
                 <div class="col-md-6">
                     <label for="ukms" class="form-label">Pilihan UKM</label>
-                    <select class="form-select" id="ukms"aria-label="Default select example" required>
+                    <select class="form-select" id="ukms"aria-label="Default select example" name="ukm" required>
                         <option selected disabled value="">Pilih...</option>
                         <option name="ukm" value="FLAT">FLAT</option>
                         <option name="ukm" value="FORSA">FORSA</option>
@@ -79,35 +79,35 @@
 
                 <div class="col-md-6">
                     <label for="nim" class="form-label">NIM</label>
-                    <input type="number" class="form-control" id="nim" required>
+                    <input type="number" class="form-control" id="nim" name="nim" required>
                 </div>
 
                 <div class="col-md-6">
                     <label for="mailtype" class="form-label">email</label>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="email">
                         <span class="input-group-text" id="mailtype">@mhs.uinjkt.ac.id</span>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <label for="ftas" class="form-label">Fakultas</label>
-                    <input type="text" class="form-control" id="ftas" required>   
+                    <input type="text" class="form-control" id="ftas" name="fakultas" required>   
                 </div>
 
                 <div class="col-md-6">
                     <label for="prodi" class="form-label">Prodi</label>
-                    <input type="text" class="form-control" id="prodi" required>   
+                    <input type="text" class="form-control" id="prodi" name="prodi" required>   
                 </div>
 
                 <div class="col-md-6">
                     <label for="telp" class="form-label">No. Telp</label>
-                    <input type="number" class="form-control" id="telp" required>
+                    <input type="number" class="form-control" id="telp" name="nohp" required>
                 </div>
 
                 <div class="col-md-12">
                     <label for="alasan" class="form-label">Alasan Bergabung</label>
-                    <textarea class="form-control" id="alasan" rows="6"></textarea>
+                    <textarea class="form-control" id="alasan" rows="6" name="alassan"></textarea>
                 </div>
 
                 <div class="col-12">
