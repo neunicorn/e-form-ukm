@@ -22,10 +22,10 @@ $querry = mysqli_query($conn, "INSERT INTO dataregis(firstName, lastName, ukm, n
 
 if($querry){
     $_SESSION['status'] = "Data berhasil di input!";
-    header("location: ../form.php");
+    header("location: ../form.php?message=Data berhasil di input!");
 }else{
     $_SESSION['status'] = "Data gagal di input!";
-    header("location: ../form.php");
+    header("location: ../form.php?message=Data gagal di input, silakan cek data diri anda kembali");
 }
 
 ?>
