@@ -1,0 +1,32 @@
+       
+            #rcorners1 {
+                border-radius: 25px;
+                background: #4a8eff;
+                padding: 20px;
+                color: aliceblue;
+                text-align: justify;
+            }
+
+            .carousel-item{
+                height:19rem;
+            }
+
+            .carousel-control-next,
+            .carousel-control-prev /*, .carousel-indicators */ {
+            filter: invert(100%);
+            }
+
+            
+            @media (min-width:599px){   
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                }
+            }
+            @media (max-width:600px)  {
+            #rcorners1{
+                margin:5px;
+                }
+
+            }

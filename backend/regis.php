@@ -2,7 +2,7 @@
 
 session_start();
 
-$conn = mysqli_connect('localhost:3308', 'root', '', 'formukm');
+$conn = mysqli_connect("localhost", "root", "", "formukm");
 if(!$conn){
     die('gagal connect' .$conn->connect_error());
 }

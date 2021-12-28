@@ -49,7 +49,7 @@
 
 
                   <li class="nav-item">
-                    <a class="nav-link" href="form.html">Regis</a>
+                    <a class="nav-link" href="form.php">Regis</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="faq.html">FAQ</a>
@@ -140,6 +140,11 @@
                         <option value="FLAT">FLAT</option>
                         <option value="FORSA">FORSA</option>
                         <option value="HIQMA">HIQMA</option>
+                        <option value="ARKADIA">ARKADIA</option>
+                        <option value="KOPMA">KOPMA</option>
+                        <option value="MENWA">MENWA</option>
+                        <option value="PSM">PSM</option>
+                        <option value="TEATER">TEATER</option>
                     </select>
                 </div>
 
