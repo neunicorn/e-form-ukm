@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 $conn = mysqli_connect("localhost", "root", "", "formtest");
 if(!$conn){
     die('gagal connect' .$conn->connect_error());
@@ -27,7 +25,7 @@ if($querry){
     header("location: ../form.php?message=Data berhasil di input!");
     $to = $email."@mhs.uinjkt.ac.id";
     $subject = "EMAIL VERIF UIN";
-    $message = "<a href='http://localhost/form/verivy.php?vkey=$vkey'>Verify your account</a>";
+    $message = "<a href='http://localhost/froms/verivy.php?vkey=$vkey'>Verify your account</a>";
     $headers = "From: ukmverifikasi@gmail.com \r\n";
     $headers .="MIME-Version: 1.0" . "\r\n";
     $headers .="Content-type:text/html;charset=UTF-8" . "\r\n";
