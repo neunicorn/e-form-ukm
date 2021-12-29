@@ -1,3 +1,8 @@
+<?php
+require 'fctions.php';
+$ukms = querys("SELECT * FROM ukms")
+?>
+
 <!DOCTYPE html>
 <html lang="id">
     <head>
@@ -65,7 +70,7 @@
     <body>
         <nav class ="navbar navbar-expand-md navbar-light bg-light sticky-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.php">
                 <img src="img/logo_uin.png" alt="" height="30" class="d-inline-block align-text-top">
                 <b style="color: #4a8eff;">UINJKT</b>
             </a>
@@ -79,14 +84,9 @@
                         UKM
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="ukmtempl.html">FLAT</a></li>
-                        <li><a class="dropdown-item" href="ukm-forsa.html">FORSA</a></li>
-                        <li><a class="dropdown-item" href="ukm-hiqma.html">HIQMA</a></li>
-                        <li><a class="dropdown-item" href="ukm-menwa.html">MENWA</a></li>
-                        <li><a class="dropdown-item" href="ukm-psm.html">PSM</a></li>
-                        <li><a class="dropdown-item" href="ukm-teater.html">TEATER SYAHID</a></li>
-                        <li><a class="dropdown-item" href="ukm-kopma.html">KOPMA</a></li>
-                        <li><a class="dropdown-item" href="ukm-arkadia.html">KPA-ARKADIA</a></li>
+                        <?php foreach($ukms as $row): ?>
+                            <li><a class="dropdown-item" href="ukmtempl.php?id=<?= $row["id"]; ?>"><?php echo $row["ukmname"] ?></a></li>
+                        <?php endforeach; ?>
                     </ul>
                   </li>
 
@@ -95,7 +95,7 @@
                     <a class="nav-link" href="form.php">Regis</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ</a>
+                    <a class="nav-link" href="faq.php">FAQ</a>
                   </li>
                 </ul>
               </div>
